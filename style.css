@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-size: 16px; */
+}
+:root{
+
+     --Red: hsl(0, 100%, 74%) ;
+     --Green: hsl(154, 59%, 51%);
+     --Blue: hsl(248, 32%, 49%);
+     --Dark-Blue: hsla(249, 10%, 26%, 0.342) ;
+     --Grayish-Blue: hsl(246, 25%, 77%);
+     --white:white;
+    
+   
+}
+
+main{
+   
+    height: 100vh;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    
+}
+
+
+.contant{
+  
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contant h1{
+    font-size: 36px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+.contant p{
+    text-align: justify;
+    font-size: 14px;
+    color: var(--white);
+}
+
+
+.introductory-trial{
+    
+    border-radius: 10px;
+    background: var(--Blue);
+    padding: 15px 25px;
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px var(--Dark-Blue) ;
+}
+.form-content{
+   
+    width: 35%;
+    min-height: 80%;
+}
+.form{
+   
+    background: var(--white);
+    width: 90%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 8px var(--Dark-Blue) ;
+}
+.input-container{
+    width: 100%;
+   
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container{
+   position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form input  {
+    padding: 15px 30px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--Grayish-Blue);
+    outline: 0px;
+}
+
+form button{
+    background: var(--Green);
+    padding: 15px 30px;
+    width: 95%;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.terms-acceptance-promp{
+    font-size: 10px;
+    text-align: center;
+    
+    
+}
+
+.terms-acceptance-promp span{
+    color: red;
+    font-weight: 600;
+}
+
+.error-msg{
+    /* border: 2px solid ; */
+    width: 90%;
+    margin-top:5px ;
+    font-size: 10px;
+    text-align: end;
+    color: var(--Red);
+    font-weight: 600;
+    display: none;
+    font-style: italic;
+}
+.error-img{
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: none;
+}
+
